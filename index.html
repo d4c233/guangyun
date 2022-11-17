@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            background-color: rgb(238, 238, 238);
+        }
+
+        .i1 {
+            display: inline-block;
+            width: 324px;
+            height: 121px;
+            margin-top: 81px;
+            margin-left: 17px;
+        }
+
+        .i2 {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        #d1 {
+            width: 358px;
+            height: 1050px;
+            margin: auto;
+        }
+
+        #d2 {
+            height: 141px;
+            background-image: url(ji233.jpg);
+            border-radius: 15px;
+        }
+
+        #d3 {
+            background-color: #fff;
+            height: 850px;
+            border-radius: 15px;
+            margin-top: 75px;
+        }
+
+        #d4 {
+            background-color: #eee;
+            border-radius: 15px;
+            width: 294px;
+            height: 170px;
+            margin-left: 32px;
+            margin-top: 20px;
+        }
+
+        .b2 {
+            margin-left: 198px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: rgb(33, 235, 110);
+            border: none;
+            border-radius: 10px;
+            width: 45px;
+            height: 30px;
+        }
+
+
+        li {
+            display: inline-block;
+            background-color: rgb(30, 190, 142);
+            border-radius: 10px;
+            list-style: none;
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .li02 {
+            width: 94px;
+            height: 50px;
+            background-color: rgb(30, 190, 142);
+        }
+
+        .p1 {
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 12px;
+            margin-left: 18px;
+        }
+
+        .p2 {
+            margin-top: 15px;
+            margin-left: 17px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <div id="d2">
+
+            <img src="ji244.png" alt="" class="i1">
+
+
+        </div>
+        <div id="d3">
+            <h2 style="text-align:center; padding-top: 15px;">只因哥快乐盒</h2>
+            <span style="margin-left: 20px; padding-top: 15px; font-weight: 700;">功能领域</span>
+
+            <button class="b2">停止</button>
+
+            <ul style="text-align: center;">
+                <li m="1">鸡</li>
+                <li m="2">你</li>
+                <li m="3">太</li>
+                <li m="4">美</li>
+                <li m="5">唱</li>
+                <li m="6">跳</li>
+                <li m="7">rap</li>
+                <li m="8">篮球</li>
+                <li m="9">music</li>
+                <li m="10">哇呵呵</li>
+                <li m="11">喜欢</li>
+                <li m="12">制作人</li>
+                <li m="13">大家好</li>
+                <li m="14">我是</li>
+                <li m="15">坤坤</li>
+                <li m="16">你干嘛</li>
+                <li m="17">哈哈</li>
+                <li m="18">哎呦</li>
+                <li m="19">厉害</li>
+                <li m="20">鸡叫</li>
+                <li class="li02" m="21">开始吟唱</li>
+                <li class="li02" m="22">你干嘛哎呦</li>
+                <li class="li02" m="23">呦哎嘛干你</li>
+                <br>
+                <li m="24">奇鸡再现</li>
+                <li m="25">外婆鸡</li>
+                <li m="26">鸡勇者</li>
+                <li m="27">黑人抬鸡</li>
+                <li m="28">稻香鸡</li>
+                <li m="29">叮叮鸡</li>
+                <li m="30">爱鸡公寓</li>
+                <li m="31">鸡卡不利</li>
+                <li m="32">鸡鸡侠</li>
+                <li m="33">密鸡冰城</li>
+                <li m="34">下山鸡</li>
+                <li m="35">影流之鸡</li>
+            </ul>
+            <div id="d4">
+                <p class="p1">
+                    使用帮助and免责声明
+                </p>
+                <p class="p2">
+                    点击按钮即可发出鸡叫
+                </p>
+                <p class="p2">
+                    音频资源来源于网络收集，程序仅限用于交流学习，请勿用于任何非法用途！
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <audio src="#" id="aud01"></audio>
+    <script>
+
+
+        var liz = document.getElementsByTagName('li');
+        var dou02 = document.getElementById('aud01');
+        for (var k = 0; k < liz.length; k++) {
+
+            liz[k].onclick = function () {
+                dou02.src = '素材/' + this.getAttribute('m') + '.mp3';
+                dou02.play();
+
+            }
+        }
+        var b2 = document.getElementsByClassName('b2');
+        b2[0].onclick = function () {
+            dou02.pause();
+        }
+
+
+    </script>
+</body>
+
+</html>
